@@ -1,0 +1,28 @@
+superuser: philaMuseumAdmin
+password: PowerofArtHackathon2016
+
+from django.db import models
+from django.utils.encoding import python_2_unicode_compatible
+
+# Create your models here.
+@python_2_unicode_compatible
+class User(models.Model):
+    name = models.TextField()
+    dept = models.TextField()
+    like_count = models.IntegerField(default=0)
+    share_count = models.IntegerField(default=0)
+
+    class Meta:
+        ordering = ['share_count']
+
+    def __str__(self):
+        return '%s id:%s' % (self.name, self.id)
+
+@python_2_unicode_compatible
+class Beacon(models.Model):
+    name = models.TextField()
+    liked = models.BooleanField(default=True)
+    beacon_id = models.TextField()
+
+    def __str__(self):
+        return '%s id:%s' % (self.name, self.beacon_id)

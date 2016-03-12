@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2313181543">
+    <data-source source="LOCAL" name="Sqlite (Xerial) - db.sqlite3" uuid="ebe8fcfb-996c-4bbd-b8fc-b6112d9d9210">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\adeba\Documents\Projects\philaMuseumHack\db.sqlite3</jdbc-url>
+    </data-source>
+  </component>
+</project>
